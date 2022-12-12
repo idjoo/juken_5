@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="20dp">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+        <TextView android:textSize="25dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/imageview1" android:background="#ff0000" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:text="Live Menu" android:textAlignment="center"/>
+    </LinearLayout>
+</RelativeLayout>

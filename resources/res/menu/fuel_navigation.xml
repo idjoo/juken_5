@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item android:id="@+id/get_map" android:checked="false" android:title="Get Map"/>
+        <item android:id="@+id/send_map" android:checked="false" android:title="Send Map"/>
+    </group>
+    <group android:id="@+id/grp2" android:checkableBehavior="single">
+        <item android:id="@+id/save_to_file" android:checked="false" android:title="Save To File"/>
+        <item android:id="@+id/open_from_file" android:checked="false" android:title="Open From File"/>
+    </group>
+    <group android:id="@+id/grp3" android:checkableBehavior="single">
+        <item android:id="@+id/set_value" android:checked="false" android:title="Set Value"/>
+        <item android:id="@+id/add_value" android:checked="false" android:title="Add Value"/>
+        <item android:id="@+id/copy" android:checked="false" android:title="Copy"/>
+        <item android:id="@+id/paste" android:checked="false" android:title="Paste"/>
+    </group>
+</menu>

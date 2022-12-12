@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <TextView android:textSize="30dp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/judul" android:background="#ff0000" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ECU Limiter"/>
+    <RelativeLayout android:background="@drawable/merahputih1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.github.anastr.speedviewlib.ProgressiveGauge android:layout_gravity="center_horizontal" android:id="@+id/gauge_view1" android:layout_width="match_parent" android:layout_height="wrap_content" app:sv_speedometerBackColor="#b3b3b3" app:sv_speedometerColor="#f6fe10" app:sv_speedTextColor="#000" app:sv_unitTextColor="#fff" app:sv_withTremble="false" app:sv_speedTextSize="25dp" app:sv_unitTextSize="0dp" app:sv_minSpeed="4500" app:sv_maxSpeed="16000" app:sv_speedTextPosition="8" app:sv_unitUnderSpeedText="false" app:sv_speedTextFormat="0"/>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/q" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/gauge_view1">
+            <TextView android:textSize="18dp" android:textColor="#000000" android:id="@+id/d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="12dp" android:text="ECU Limiter : "/>
+            <Spinner android:id="@+id/et_ecu_limiter" android:layout_width="150dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="12dp" android:layout_toRightOf="@+id/d"/>
+        </RelativeLayout>
+        <Button android:textSize="20dp" android:id="@+id/exit_ecu_limiter" android:background="@drawable/tombol_kuning" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:text="EXIT" android:layout_below="@+id/q"/>
+        <Button android:textSize="20dp" android:id="@+id/save_ecu_limiter" android:background="@drawable/tombol_kuning" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:text="SAVE" android:layout_below="@+id/q" android:layout_alignParentRight="true"/>
+        <ScrollView android:scrollbarStyle="outsideOverlay" android:id="@+id/ScrollView01" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="8dp" android:layout_marginRight="5dp" android:layout_alignParentBottom="true">
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15dp" android:textColor="#000000" android:id="@+id/tutorial" android:background="#07000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/EcuLimiter" android:layout_alignParentBottom="true" android:layout_centerInParent="true"/>
+            </HorizontalScrollView>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

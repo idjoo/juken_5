@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AlertDeselerasi">Showing Fuel Correction is File Data,\10so changes in deceleration fuel will not appear on Fuel Correction</string>
+    <string name="AutoMappingBM">No value changed at Base Map TPS 100%</string>
+    <string name="AutoMappingEcu">Please Load Default ECU Pattern</string>
+    <string name="AutoMappingFIle">Please Open Pattern File</string>
+    <string name="AutoMappingFull">Open Mapping File / Get Map</string>
+    <string name="AutoMappingProcess">There is/are Base Map value smaller than 2mS, continue process?</string>
+    <string name="AutoTiming">Tutorial :\10Used for reduce the degree of ignition at a certain temperature,\10so that the machine is not over heat</string>
+    <string name="CAlibration">1. Accelerator is in closed condition (TPS 0%%), then press SAVE button. (Value in the Minimum and Value boxes must be the same)\102. Fully open the accelerator and hold (TPS 100%%), then press SAVE button. (Value in the Maximum and Value boxes must be the same)</string>
+    <string name="DecelerationFuel">Tutorial :\101. Deceleration Fuel is used to overcome the backfire when decelerating. \10 If a backfire occurs, Fuel Correction value must be added\102. Two things that can cause a backfire:\10 a. Ignition system is too lean\10 b. Incorrect exhaust design</string>
+    <string name="Dwell">Tutorial :\10- Dwell is specified time for discharging coil through the spark plug\10- Spark plugs will produce a bigger fire if the dwell value gets bigger, but the current use of Accu will be more extravagant\10- Dwell value must be precise with the coil resistance, If it is too large or too small it will feel like limited by LIMITER</string>
+    <string name="EcuLimiter">Tutorial :\10- Used for limit engine rotation</string>
+    <string name="FactoryReset">Factory Reset will return\10above parameter value like\10factory setting</string>
+    <string name="FactoryResetDo">Do Factory Reset</string>
+    <string name="FanTemp">Tutorial :\10The function of Fan Temperature is to turn on cooling fan at set temperature</string>
+    <string name="FuelCalculatorNilai">Fuel correction value to small</string>
+    <string name="FuelCalculatorSebelumnya">Calculate Previous Value?</string>
+    <string name="JetFuel">Tutorial :\101. If the accelerator opened slowly, and value of slow jet fuel is 10%%, then JET FUEL will provide 10%% additional fuel (1mS)</string>
+    <string name="JetFuelPlus">Tutorial :\10 1.Jet Fuel : Additional fuel when gas pedal start to open. It start from TPS 0.\10 2.Position : Jet Fuel\'s initial start. The 0 degree point is at 60 degrees BTDC compression step.\10 3.Pulse Width : The amount of fuel that will be added</string>
+    <string name="LiveSalahCore">Different Core and Mapping File</string>
+    <string name="LiveSalahMapping">Mapping File is not ECU Data</string>
+    <string name="LiveSaveBM">There is/are data changed in Base Map,\10please do Send Map to correct ECU Core\10or Get Map from correct ECU Core</string>
+    <string name="LiveSaveFuel">There is/are data changed in Fuel Correction,\10please do Send Map to correct ECU Core\10or Get Map from correct ECU Core</string>
+    <string name="LiveSaveIG">There is/are data changed in Ignition Timing,\10please do Send Map to correct ECU Core\10or Get Map from correct ECU Core</string>
+    <string name="LiveSaveIT">There is/are data changed in Injector Timing,\10please do Send Map to correct ECU Core\10or Get Map from correct ECU Core</string>
+    <string name="PatternNilaiBesar">Value bigger than 0 (Red Background), check Base Map and Fuel Correction</string>
+    <string name="RpmIdle">Tutorial :\101. Idle / Stasioner is specified engine speed rotation\102. Position is how big the valve opening. If too big then the engine will be more roared at the start\103. Deceleration delay is specified time for engine rotation down from high rpm to low rpm during deceleration\10- If it is too high, then the accelerator will be like a stuck\10- If it is too low, then the engine speed rotation will quickly go down even off when decelerating\104. IDLE FUEL is fuel needed when engine is in idle condition</string>
+    <string name="Shifter">Tutorial :\101. Quick Shifter is fast gears shifting without clutch\102. Quick Shifter sensor is mounted on the gear handle and connected to the ECU\103. TIME DELAY is the specified delay time to turn off the engine so that the gear can be shifted without using the clutch</string>
+    <string name="SmartKey">Tutorial :\10- To activate the smart key function, please select ENABLE, then press OK button\10- If you want to activate new coins / cards, choose REGISTRATION, then press OK button</string>
+    <string name="StartFuel">Tutorial :\10- Fuel Starter(FS) is fuel needed only to turn the motorcycle on\10Tips and Trick :\10- Motorcycles must be turn on only by pressing the button without turning the accelerator\10- If the motorcycle can be turn on with a slightly opening accelerator, then FS should be REDUCED gradually\10- If the motorcycle can not be turn on by slightly opening the accelerator or accelerator closed, then FS should be ADDED gradually\10- Usually for BORE-UP motorcycle, FS need to be ADDED\10- Usually for a motorcycle that has replaced the Cam Shaft (with a large overlap), then the FS needs to be REDUCED</string>
+    <string name="TanyaAllMap">Get All Map?</string>
+    <string name="TanyaSendAllMap">Send All Map?</string>
+    <string name="Vvtc">Tutorial :\10VVTC control works to move Low Cam to High Cam</string>
+    <string name="WarmingUp">Tutorial :\10- Warming Up (WU) is a feature to add fuel automatically if the machine is in cool condition,\10 so the machine can be idle properly\10Tips and Trick :\10- Suppose if the engine temperature value is 60 C and Fuel 5%%.\10- This means that if the engine temperature is smaller than 60 C, then ECU will increase the fuel by 5%%.\10- Fuel Correction value is determined according to the condition of the place and the surrounding air</string>
+    <string name="app_name">Juken 5</string>
+    <string name="autoCorrection">Tutorial :\10- Auto Correction (AC) will do fuel corrections automatically \10 when the motorcycle is in different air condition and different altitude place from sea level\10Tips and Trick :\10- Suppose that the intake temperature (TI) is 33C and intake correction (KI) is +0.03%%.\10- If you are in a high place where the air temperature is 13C. \10 then ECU will automatically reduce fuel by -20 x 0.03 = -0.6%% (TI = 13-33 = -20)</string>
+    <string name="closeDrawer">Drawer ditutup</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="openDrawer">Drawer dibuka</string>
+</resources>

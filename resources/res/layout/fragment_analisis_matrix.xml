@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <HorizontalScrollView android:id="@+id/scrollAtas" android:layout_width="wrap_content" android:layout_height="46dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="20dp" android:textColor="#000000" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="TPS "/>
+                <Spinner android:id="@+id/spinnerTPS" android:layout_width="120dp" android:layout_height="wrap_content" android:layout_toRightOf="@+id/text" android:layout_alignBottom="@+id/text" android:textAlignment="center"/>
+                <ImageButton android:id="@+id/analisis_set_value" android:background="@drawable/tombol_transparan" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp" android:src="@drawable/set_value" android:scaleType="fitXY" android:layout_toRightOf="@+id/spinnerTPS"/>
+                <ImageButton android:id="@+id/analisis_add_value" android:background="@drawable/tombol_transparan" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp" android:src="@drawable/add_value" android:scaleType="fitXY" android:layout_toRightOf="@+id/analisis_set_value"/>
+                <ImageButton android:id="@+id/analisis_copy" android:background="@drawable/tombol_transparan" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp" android:src="@drawable/copy" android:scaleType="fitXY" android:layout_toRightOf="@+id/analisis_add_value"/>
+                <ImageButton android:id="@+id/analisis_paste" android:background="@drawable/tombol_transparan" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp" android:src="@drawable/paste" android:scaleType="fitXY" android:layout_toRightOf="@+id/analisis_copy"/>
+                <ImageButton android:id="@+id/analisis_tambah_5" android:background="@drawable/tombol_transparan" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp" android:src="@drawable/plus" android:scaleType="fitXY" android:layout_toRightOf="@+id/analisis_paste"/>
+                <ImageButton android:id="@+id/analisis_kurang_5" android:background="@drawable/tombol_transparan" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp" android:src="@drawable/minus" android:scaleType="fitXY" android:layout_toRightOf="@+id/analisis_tambah_5"/>
+                <ImageButton android:id="@+id/analisis_auto_arrange" android:background="@drawable/tombol_transparan" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp" android:src="@drawable/analisis_arrange" android:scaleType="fitXY" android:layout_toRightOf="@+id/analisis_kurang_5"/>
+            </RelativeLayout>
+        </HorizontalScrollView>
+        <juken.android.com.juken_5.folder_analisis.TableMainLayoutAna android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="3dp" android:layout_marginBottom="60dp" android:layout_below="@+id/scrollAtas"/>
+    </RelativeLayout>
+</FrameLayout>

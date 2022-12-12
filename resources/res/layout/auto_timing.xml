@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <TextView android:textSize="30dp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/judul" android:background="#ff0000" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Auto Timing"/>
+    <RelativeLayout android:background="@drawable/merahputih1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.github.mikephil.charting.charts.LineChart android:id="@+id/linechart" android:background="@drawable/back_auto_timing" android:layout_width="match_parent" android:layout_height="220dp"/> //ini Retard\10
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/q" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/linechart">
+            <TextView android:textSize="20dp" android:textColor="#000000" android:gravity="right" android:id="@+id/d" android:layout_width="160dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="8dp" android:text="Temperature (C) : "/>
+            <Spinner android:id="@+id/temp" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="8dp" android:layout_toRightOf="@+id/d"/>
+        </RelativeLayout> //ini Temp\10
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/w" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_below="@+id/q">
+            <TextView android:textSize="20dp" android:textColor="#000000" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/z" android:layout_width="160dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="8dp" android:text="Retard (Degree) : "/>
+            <EditText android:gravity="center" android:id="@+id/retard" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="8dp" android:text="0" android:maxLength="3" android:layout_toRightOf="@+id/z" android:inputType="numberSigned" android:textCursorDrawable="@null"/>
+        </RelativeLayout>
+        <Button android:textSize="20dp" android:id="@+id/exit_auto_timing" android:background="@drawable/tombol_kuning" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:text="EXIT" android:layout_below="@+id/w"/>
+        <Button android:textSize="20dp" android:id="@+id/save_auto_timing" android:background="@drawable/tombol_kuning" android:layout_width="150dp" android:layout_height="40dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:text="SAVE" android:layout_below="@+id/w" android:layout_alignParentRight="true"/>
+        <ScrollView android:scrollbarStyle="outsideOverlay" android:id="@+id/ScrollView01" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="8dp" android:layout_marginRight="5dp" android:layout_alignParentBottom="true">
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15dp" android:textColor="#000000" android:id="@+id/tutorial" android:background="#07000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/AutoTiming" android:layout_alignParentBottom="true" android:layout_centerInParent="true"/>
+            </HorizontalScrollView>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

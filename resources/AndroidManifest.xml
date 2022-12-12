@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="2.2.0" package="juken.android.com.juken_5" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="25"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="true"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/brt_icon" android:debuggable="true" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="@drawable/brt_icon">
+        <activity android:name="juken.android.com.juken_5.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Black.NoTitleBar" android:name="juken.android.com.juken_5.send">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_fuel.fuel_correction" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.FUEL_CORRECTION"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_fuel.ImportData" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMPORTDATA"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_fuel.imp_fuel" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMP_FUEL"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_injector.injector_timing" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.INJECTOR_TIMING"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_injector.ImportData" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMPORTDATA"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_injector.imp_injector" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMP_INJECTOR"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_base_map.base_map" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.BASE_MAP"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_base_map.ImportData" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMPORTDATA"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_base_map.ImportDataPattern" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMPORTDATAPATTERN"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_base_map.imp_base_map" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMP_BASE_MAP"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_ignition.ignition_timing" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IGNITION_TIMING"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_ignition.ImportData" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMPORTDATA"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_ignition.imp_ignition" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMP_IGNITION"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_afr.afr_display" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.AFR_DISPLAY"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.main_menu" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.MAIN_MENU"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.deceleration_fuel" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.DECELERATION_FUEL"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.start_fuel" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.START_FUEL"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.warming_up" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.AUTO_CORRECTION"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.auto_correction" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.AUTO_CORRECTION"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.rpm_idle" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.RPM_IDLE"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.idle_fuel" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IDLE_FUEL"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.e_map" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.E_MAP"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.jet_fuel" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.JET_FUEL"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.jet_fuel_plus" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.JET_FUEL_PLUS"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.jss" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.JSS"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.shifter" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.SHIFTER"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.dwell" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.DWELL"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.calibration" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.CALIBRATION"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.vvtc" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.VVTC"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.turbo" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.TURBO"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.maintenance" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.MAINTENANCE"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.ecu_limiter" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.ECU_LIMITER"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.smart_key" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.SMART_KEY"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.auto_timing" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.AUTO_TIMING"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.reset_factory" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.RESET_FACTORY"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.diagnostik" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.DIAGNOSTIK"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.fuel_calculator" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.FUEL_CALCULATOR"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.fuel_calc_sementara" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.FUEL_CALC_SEMENTARA"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.fan_temp" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.FAN_TEMP"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.auto_protect" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.AUTO_PROTECT"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.pattern.pattern1.pattern1" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.PATTERN1"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.pattern.pattern2.pattern2" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.PATTERN2"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.pattern.pattern2.ImportData" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMPORTDATA"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.pattern.pattern2.imp_pattern" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMP_PATTERN"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.folder_analisis.analisis" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.ANALISIS"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.live.live_awal" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.LIVE_AWAL"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.live.fuel_live.fuel_correction_live" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.FUEL_CORRECTION_LIVE"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.live.ig_live.ignition_timing_live" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IGNITION_TIMING_LIVE"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.AutoMapping.auto_mapping" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.AUTO_MAPPING"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.AutoMapping.ImportData" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMPORTDATA"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.data_logger.data_logger_awal" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.DATA_LOGGER_AWAL"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.data_logger.ImportData" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.IMPORTDATA"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.data_logger.data_logger_utama" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.DATA_LOGGER_UTAMA"/>
+            </intent_filter>
+        </activity>
+        <activity android:theme="@style/Theme.Black.NoTitleBar" android:name="juken.android.com.juken_5.data_logger.data_logger_list">
+            <intent-filter>
+                <action android:name="android.intent.action.DATA_LOGGER_LIST"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.VirtualDyno.virtual_dyno" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.VIRTUAL_DYNO"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.WifiListAdapter" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.WIFILISTADAPTER"/>
+            </intent_filter>
+        </activity>
+        <activity android:name="juken.android.com.juken_5.wifi_menu" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent_filter>
+                <action android:name="android.intent.action.WIFI_MENU"/>
+            </intent_filter>
+        </activity>
+        <service android:name="juken.android.com.juken_5.WifiService" android:enabled="true"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" xmlns:ns1="http://schemas.android.co/apk/res/android" ns1:shape="rectangle">
+    <solid xmlns:ns2="http://schemas.android.co/apk/res/android" ns2:color="@android:color/darker_gray"/>
+    <stroke xmlns:ns3="http://schemas.android.co/apk/res/android" ns3:width="2dp" xmlns:ns4="http://schemas.android.co/apk/res/android" ns4:color="#000000"/>
+</shape>

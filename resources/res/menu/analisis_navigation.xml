@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/chart" android:id="@+id/navigation_param" android:title="Param"/>
+    <item android:icon="@drawable/matrix" android:id="@+id/navigation_matrix" android:title="Matrix"/>
+    <item android:icon="@drawable/image" android:id="@+id/navigation_image" android:title="Image"/>
+</menu>

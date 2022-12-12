@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <FrameLayout android:id="@+id/frame_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <android.support.design.widget.BottomNavigationView android:layout_gravity="bottom" android:id="@+id/navigation" android:background="?android:attr/windowBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground" app:menu="@menu/analisis_navigation" app:itemIconTint="@android:color/white" app:itemTextColor="@android:color/white" app:itemBackground="@color/bgBottomNavigation"/>
+</android.support.design.widget.CoordinatorLayout>
